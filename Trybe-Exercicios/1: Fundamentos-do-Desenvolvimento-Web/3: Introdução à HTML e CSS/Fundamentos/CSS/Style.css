@@ -1,13 +1,11 @@
         
-    body {
+body {
         background-color:rgb(255, 255, 255);
         font-size: 20px;
         text-indent: 30px;
-      }
-
-      p {
-        font-family: fantasy;
-      }
+        color: #10002B;
+        font-family: fantasy 
+     }
 
       h1 {
         color:purple;
@@ -16,15 +14,40 @@
         text-decoration-color: black;
       }
 
+      #photo {
+       border-radius: 10%;
+       outline-style: auto;
+       outline-color: purple;
+      }
+
       #Sobre-mim {
         text-indent: 0;
         font-size: larger;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       }
 
-      li {
+      
+      #abilities {
         font-weight: bold;
         line-height: 50px;
         text-decoration: underline;
         text-decoration-color: purple ;
+      }
+
+      #shortcuts {
+        text-indent: 0px;
+        font-size: 25px;
+        line-height: 50px;
+
+      }
+
+      .contact {
+        text-decoration: none;
+        color: #000000;
+        background-color: #C77DFF;
+        padding: 15px 15px;
+        border-radius: 10%;
+        line-height: 50px;
+        outline-style: auto;
+        outline-color: black
       }
