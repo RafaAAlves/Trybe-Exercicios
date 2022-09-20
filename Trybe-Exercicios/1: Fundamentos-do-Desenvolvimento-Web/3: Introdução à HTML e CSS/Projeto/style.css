@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(253, 251, 251);
+  font-size: large;
+  font-family: 'Reem Kufi Fun', sans-serif;
+  color: rgb(36, 1, 36);
+  line-height: 30px;
+  margin-left: 1%;
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0%;
+  right: 8%;
+  border: 5px solid black;
+  background-color: azure;
+  padding: 0% 20% 0% 20%;
+}
+
+#minha_foto {
+  width: 20%;
+  margin: 5% 0% 0% 0%;
+}
+
+ul,
+ol {
+  display: inline-block;
+  margin-left: 1%;
+  margin-top: 7%;
+  border: black solid 2px;
+  background-color: rgb(240, 255, 255);
+  padding: 1% 2% 1% 2%;
+}
+
+ol {
+  margin-left: 7%;
+}
+
+#rodape {
+  font-size: 30px;
+  font-weight: bolder;
+  border: black solid 3px;
+  display: inline-block;
+  padding: 0% 2% 0% 2%;
+  background-color: azure;
+  margin-right: 50%;
+  margin-top: 2%;
+}
+
+.lado-esquerdo {
+  width: 30%;
+  display: inline-block;
+}
+
+.lado-direito {
+  width: 13%;
+  background-color: cornsilk;
+  padding: 0% 1% 0% 1%;
+  display: inline-block;
+  margin-left: 5%;
+}
