@@ -1,4 +1,4 @@
-# Primeiro Projeto
+# Projeto Lessons Learned
 
 Este foi o primeiro projeto na turma 27, nós precisavamos criar um repositório seguindo alguns requisitos, precisando concluir ao menos 80% dos requisitos obrigatórios, sem necessidade de concluir os bônus.
 
