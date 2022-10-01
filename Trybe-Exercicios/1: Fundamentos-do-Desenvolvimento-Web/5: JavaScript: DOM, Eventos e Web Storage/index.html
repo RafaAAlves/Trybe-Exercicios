@@ -1,115 +1,46 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Exercício</title>
-    <style>
-      section {
-        border-color: black;
-        border-style: solid;
-      }
-
-      .title {
-        text-align: center;
-      }
-
-      .main-content {
-        background-color: yellow;
-      }
-
-      .main-content .center-content {
-        background-color: red;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .main-content .center-content p {
-        font-style: italic;
-      }
-
-      .main-content .left-content {
-        background-color: green;
-        width: 60%;
-        margin-left: 0;
-        margin-right: auto;
-      }
-
-      .main-content .left-content .small-image {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 100%;
-      }
-
-      .main-content .right-content {
-        background-color: blue;
-        width: 60%;
-        margin-left: auto;
-        margin-right: 0;
-      }
-
-      .main-content .description {
-        text-align: center;
-      }
-    </style>
+    <title>Calendar</title>
   </head>
-  <body id="corpo">
-    <script> // COLOQUE SEU CÓDIGO AQUI
-
-// 1) Adicione a tag h1 com o texto Exercício - JavaScript DOM como filho da tag body:
-      let site = document.getElementsByTagName('body')[0]
-      let texto = document.createElement('h1')
-      texto.innerText = 'Exercício - JavaScript DOM'
-      site.appendChild(texto)
-// --------------------------------------------------------------------------------
-// 2) Adicione a tag main com a classe main-content como filho da tag body:
-      let principal = document.createElement('main')
-      principal.className = 'main-content'
-      site.appendChild(principal)
-// --------------------------------------------------------------------------------
-// 3) Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
-      let secao = document.createElement('section');
-      secao.className = 'center-content';
-      principal.appendChild(secao)
-// --------------------------------------------------------------------------------
-// 4) Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
-      let paragrafo = document.createElement('p');
-      paragrafo.innerText = 'Olá, esta é a conclusão do exercício 4';
-      secao.appendChild(paragrafo)
-// --------------------------------------------------------------------------------
-// 5) Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
-      let left = document.createElement('section');
-      left.className = 'left-content';
-      principal.appendChild(left);
-// --------------------------------------------------------------------------------
-// 6) Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
-      let right = document.createElement('section');
-      right.className = 'right-content';
-      principal.appendChild(right);
-// --------------------------------------------------------------------------------
-// 7) Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image. Esse elemento deve ser filho do section criado no passo 5;
-      let image = document.createElement('img');
-      image.src = 'https://picsum.photos/200'
-      image.className = 'small-image';
-      left.appendChild(image)
-// --------------------------------------------------------------------------------
-// 8) Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um, dois, três, … como valores da lista. Essa lista deve ser filha do section criado no passo 6;
-      let list = document.createElement('ul')
-      right.appendChild(list)
-      let numeros = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez']
-      for(index = 0; index < numeros.length; index += 1) {
-      let listContent = document.createElement('li')  
-      listContent.innerText = numeros[index]
-      list.appendChild(listContent) } 
-// --------------------------------------------------------------------------------
-// 9) Adicione 3 tags h3, todas sendo filhas do main criado no passo 2.
-      for (index = 1; index <= 3; index += 1) {
-      let header3 = document.createElement('h3');
-      header3.innerText = 'Eaee!'
-      principal.appendChild(header3);
-      }
-    </script>
+  <body>
+    <header class="month-container">
+      <ul>
+        <li id="month">Dezembro</li>
+        <li id="year">2020</li>
+      </ul>
+    </header>
+    <div class="week-days-container">
+      <ul class="week-days">
+      </ul>
+    </div>
+    <div class="days-container">
+      <ul id="days">
+      </ul>
+    </div>
+    <div class="buttons-container">
+    </div>
+    <section class="tasks-container">
+      <div class="my-tasks">
+        <h3>MINHAS TAREFAS</h3>
+      </div>
+      <div class="input-container">
+        <h3>COMPROMISSOS</h3>
+        <label for="task-input">Novo:</label>
+        <input type="text"
+          id="task-input"
+          placeholder="Escreva seu compromisso"
+        >
+        <button id="btn-add">Adicionar</button>
+      </div>
+      <div class="task-list-container">
+        <ul class="task-list">
+        </ul>
+      </div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
