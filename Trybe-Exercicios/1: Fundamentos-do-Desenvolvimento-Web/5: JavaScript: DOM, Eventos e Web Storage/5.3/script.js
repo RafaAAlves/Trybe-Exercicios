@@ -59,8 +59,13 @@ function createDaysOfTheWeek() {
         for (let index = 0; index < folgas.length; index += 1) {
             if (folgas[index].style.backgroundColor == cor2) {
                 folgas[index].style.backgroundColor = cor
+                folgas[index].style.fontWeight = 'normal'
+                folgas[index].style.color = '#777'
+
             } else {
                 folgas[index].style.backgroundColor = cor2
+                folgas[index].style.fontWeight = 'bolder'
+                folgas[index].style.color = 'red'
             }
         }
     })
@@ -118,3 +123,58 @@ dias.addEventListener('mouseout', function() {
         })
     }
 } zoomOut()
+
+// 7) Implemente uma função que adicione uma tarefa personalizada ao calendário.
+
+function createTask(string) {
+
+let task = document.createElement('span')
+let myTasks = document.getElementsByClassName('my-tasks')[0]
+
+task.innerHTML = string
+
+
+
+myTasks.appendChild(task)
+} createTask('Projeto');
+
+// 8) Implemente uma função que adicione uma legenda com cor para a tarefa.
+
+function taskColor(color) {
+    let createColor = document.createElement('div')
+    let myTasks = document.getElementsByClassName('my-tasks')[0]
+    
+    createColor.className = 'task'
+    createColor.style.backgroundColor = color
+    
+    myTasks.appendChild(createColor)
+} taskColor('green')
+
+// 9) Implemente uma função que selecione uma tarefa.
+let taskCircle = document.getElementsByClassName('task')[0]
+    taskCircle.addEventListener('click', function() {
+        if (taskCircle.className == 'task') {
+            taskCircle.className = 'task selected'
+        } else {
+            taskCircle.className = 'task'
+        }
+})
+
+// 10) Implemente uma função que atribua a cor da tarefa ao dia do calendário.
+function taskDayColor(){
+let selectedTask = document.getElementsByClassName('task selected');
+let days = document.getElementById('days');
+let task = document.querySelector('.task');
+let taskColor = task.style.backgroundColor;
+
+days.addEventListener('click', function(event) {
+    let eventTarget = event.target.style.color
+    if (selectedTask.length > 0 && event.target.style.color !== taskColor) {
+        let color = selectedTask[0].style.backgroundColor
+        event.target.style.color = color
+    }   else if (eventTarget === taskColor) {
+        event.target.style.color = 'rgb(119,119,119)'
+    }
+ })
+
+} taskDayColor()
