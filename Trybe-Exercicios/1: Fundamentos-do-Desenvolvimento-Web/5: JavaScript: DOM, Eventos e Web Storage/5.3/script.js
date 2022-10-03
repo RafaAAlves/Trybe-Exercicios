@@ -178,3 +178,39 @@ days.addEventListener('click', function(event) {
  })
 
 } taskDayColor()
+
+// *BÔNUS* Implemente uma função que, ao digitar um compromisso na caixa de texto “COMPROMISSOS”, adiciona o item à lista “MEUS COMPROMISSOS” ao clicar no botão “ADICIONAR”.
+
+let botao = document.getElementById('btn-add');
+let caixaTexto = document.getElementById('task-input');
+let listaCompromisso = document.getElementsByTagName('h3')[1]
+
+
+    botao.addEventListener('click', function() {
+        
+        if (caixaTexto.value.length < 1) {
+            alert('ERRO: Sem caracteres o suficiente')
+        } else {
+            let compromissos = document.createElement('li')
+            compromissos.style.margin = '20px'
+            compromissos.innerHTML = caixaTexto.value
+        
+            listaCompromisso.appendChild(compromissos)
+            caixaTexto.value = ''
+    }
+})
+
+caixaTexto.addEventListener('keydown', function(event) {
+    if(event.key == 'Enter') {
+        if (caixaTexto.value.length < 1) {
+            alert('ERRO: Sem caracteres o suficiente')
+        } else {
+            let compromissos = document.createElement('li')
+            compromissos.style.margin = '20px'
+            compromissos.innerHTML = caixaTexto.value
+        
+            listaCompromisso.appendChild(compromissos)
+            caixaTexto.value = ''
+    }
+}}
+)
