@@ -1,0 +1,45 @@
+#title {
+    text-align: center;
+}
+
+#color-palette {
+    text-align: center;
+}
+
+#button-random-color { 
+    margin-left: 40%;
+    width: 20%;
+    border: 3px solid rgb(92, 2, 92);
+    background-color:azure;
+    padding: 10px
+}
+
+#pixel-board {
+    width: 210px;
+    text-align: center;
+    margin-left: 847px;
+    margin-top: 2%;
+}
+
+#clear-board {
+    width: 150px;
+    height: 70px;
+    display: block;
+    position: absolute;
+    margin-left: 46%;
+    margin-top: 5px;
+    border: solid rgb(92, 2, 92) 2px;
+    background-color:azure;
+}
+
+#board-size {
+    display: inline-block;
+    background-color: azure;
+    margin-left: 48%;
+    margin-top: 95px;
+}
+
+#generate-board {
+    display: inline-block;
+    background-color: azure;
+}

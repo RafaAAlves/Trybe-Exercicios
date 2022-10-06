@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TrybeTrip ☆	</h1>
+<form action="" method="get" enctype="multipart/form-data">
+    <section>    
+        <label for="name">Nome Completo:</label>
+        <input name="name" id="name" type="text" autocomplete="off" minlength="10" maxlength="40">
+    </section>
+
+    <section>
+        <label name="email" for="email">E-mail:</label>
+        <input id="email" type="text" autocomplete="on" minlength="10" maxlength="50">
+    </section>
+
+    <section>
+        <label for="">Destino Preferido:</label>
+        
+        <input id="destination-1" type="radio" name="destination" value="Cidade">
+        <label for="destination-1"> Cidade </label>
+        
+        <input id="destination-2" type="radio" name="destination" value="Campo"> 
+        <label for="destination-2"> Campo </label>
+  
+        <input id="destination-3" type="radio" name="destination" value="Praia"> 
+        <label for="destination-3"> Praia </label>
+
+        <input id="destination-4" type="radio" name="destination" value="Montanhas"> 
+        <label for="destination-4"> Montanhas </label>
+    </section>
+
+    <section>
+        <label name="whyYou?" for="texto">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <br>
+        <textarea name="whyYou" id="texto" maxlength="500" cols="61" rows="10"></textarea>
+    </section>
+
+    <section>
+        <label name="date" for="data">Qual é a melhor data para realizar a viagem?</label>
+        <input id="data" name="date" type="date">
+    </section>
+
+    <section>
+        <input id="opportunities" type="checkbox" name="opportunities" id="">
+        <label for="opportunities">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <br>
+        <input id="allowPics" type="checkbox" name="allowPics" id="picPermission" required>
+        <label for="allowPics">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    </section>
+
+
+    <section>
+        <button id='submit' type="submit">Enviar Informações</button>
+        <button id="reset" type="reset"> <img width="20px" src="https://cdn-icons-png.flaticon.com/512/1828/1828035.png"button>
+    </section>
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
