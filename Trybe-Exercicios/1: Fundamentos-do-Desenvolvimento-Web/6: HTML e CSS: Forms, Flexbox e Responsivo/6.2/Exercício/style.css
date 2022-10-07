@@ -1,0 +1,39 @@
+h1 {
+    text-align: center;
+    color: gold;
+    font-size: 100px;
+    margin-top: 0%;
+}
+
+section {
+    margin: 1%;
+}
+
+/* #submit {
+    background-color: gold;
+    width: 300px;
+    height: 50px;
+    border-style: groove;
+    border: solid 3px goldenrod;
+    font-size: 25px;
+    font-family: monospace;
+    border-radius: 8px;
+}
+
+#submit:hover {
+    background-color: goldenrod;
+    border: solid 3px black;
+} */
+
+/* #reset {
+    width: 100px;
+    height: 30px
+} */
+
+label {
+    font-size: 20px;
+}
+
+textarea {
+    margin-top: 15px;
+}
