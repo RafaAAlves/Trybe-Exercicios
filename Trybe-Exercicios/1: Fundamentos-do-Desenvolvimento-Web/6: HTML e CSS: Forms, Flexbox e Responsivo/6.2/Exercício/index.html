@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- CSS only -->
+<link rel="stylesheet" href="bootstrap-5.2.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TrybeTrip ☆	</h1>
+<form action="" method="get" enctype="multipart/form-data">
+    <section class="">    
+        <label class="form-label" for="name">Nome Completo:</label>
+        <input class="form-control" name="name" id="name" type="text" autocomplete="off" minlength="10" maxlength="40">
+    </section>
+
+    <section>
+        <label class="form-label" name="email" for="email">E-mail:</label>
+        <input class="form-control" id="email" type="text" autocomplete="on" minlength="10" maxlength="50">
+    </section>
+
+    <section>
+        <label class="form-label" for="">Destino Preferido:</label>
+        
+        <input class="form-check-input" id="destination-1" type="radio" name="destination" value="Cidade">
+        <label class="form-check-label" for="destination-1"> Cidade </label>
+        
+        <input class="form-check-input" id="destination-2" type="radio" name="destination" value="Campo"> 
+        <label class="form-check-label" for="destination-2"> Campo </label>
+  
+        <input class="form-check-input" id="destination-3" type="radio" name="destination" value="Praia"> 
+        <label class="form-check-label" for="destination-3"> Praia </label>
+
+        <input class="form-check-input" id="destination-4" type="radio" name="destination" value="Montanhas"> 
+        <label class="form-check-label" for="destination-4"> Montanhas </label>
+    </section>
+
+    <section>
+        <label name="whyYou?" for="texto">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
+        <br>
+        <textarea name="whyYou" class="form-label" id="texto" maxlength="500" cols="61" rows="10"></textarea>
+    </section>
+
+    <section>
+        <label name="date" for="data">Qual é a melhor data para realizar a viagem?</label>
+        <input id="data" name="date" type="date">
+    </section>
+
+    <section>
+        <input id="opportunities" class="form-check-input" type="checkbox" name="opportunities" id="">
+        <label class="form-check-label" for="opportunities">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+        <br>
+        <input id="allowPics" type="checkbox" name="allowPics" class="form-check-input" id="picPermission" required>
+        <label class="form-check-label" for="allowPics">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+    </section>
+
+
+    <section>
+        <button id='submit' class="btn btn-warning" type="submit">Enviar Informações</button>
+        <button id="reset" class="btn btn-danger" type="reset">LIMPAR </button>
+    </section>
+</form>
+
+    <script src="script.js"></script>
+</body>
+</html>
