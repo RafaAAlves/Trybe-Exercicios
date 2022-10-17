@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+}
+
+header {
+    background-color: cornsilk;
+    height: 100px;
+}
+
+#title {
+    color: gold;
+    font-size: 70px;
+    text-align: center;
+    cursor: default;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#tutorial {
+    font-size: 100px;
+    text-align: center;
+}
+
+#character {
+    width: 500px;
+}
+
+#character:hover {
+    width: 510px;
+    cursor: grab;
+}
+
+#upgrades {
+    display: flex;
+}
+
+#upgrade1, #upgrade2, #upgrade3, #upgrade4 {
+    background-color: red;
+    color: azure;
+    width: 300px;
+    height: 80px;
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#upgrade1:hover, #upgrade2:hover, #upgrade3:hover, #upgrade4:hover {
+    background-color: rgb(110, 1, 1);
+    cursor: grab;
+}
+
+
+#upgrade1:disabled, #upgrade2:disabled, #upgrade3:disabled, #upgrade4:disabled {
+    background-color: silver;
+}
