@@ -30,7 +30,6 @@ main {
 }
 
 #character:hover {
-    width: 510px;
     cursor: grab;
 }
 
@@ -42,6 +41,8 @@ main {
 
 #upgrades {
     display: flex;
+    position: absolute;
+    margin-top: 45%;
 }
 
 #upgrade1, #upgrade2, #upgrade3, #upgrade4 {
