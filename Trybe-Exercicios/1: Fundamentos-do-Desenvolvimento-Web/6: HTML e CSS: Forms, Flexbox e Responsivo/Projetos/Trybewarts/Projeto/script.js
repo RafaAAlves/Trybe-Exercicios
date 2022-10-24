@@ -85,8 +85,8 @@ enviar.addEventListener('click', (event) => {
 
   const newForm = document.getElementById('form-data');
 
-  const strings = ['Nome: ', 'Email: ', 'Casa: ', 'Família: ', 'Matérias: ', 'Avaliação: '];
-  strings.push('Observações: ');
+  const strings = ['Nome: ', 'Email: ', 'Casa: ',
+    'Família: ', 'Matérias: ', 'Avaliação: ', 'Observações: '];
   const valores = [nome + lastName, emailInput, casa, familia, materias, avaliation, observations];
 
   for (let index = 0; index < valores.length; index += 1) {
